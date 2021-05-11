@@ -1,0 +1,200 @@
+/* -------------
+Main style
+---------------*/
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.header {
+  padding: 100px;
+  text-align: center;
+  background: rgb(35, 196, 182);
+  color: white;
+}  
+
+h1,h2,h3,h4,h5 {
+    text-align: center;
+
+}
+
+/* -------------
+Navigation bar
+---------------*/
+.navbar {
+    display: flex;
+    background-color: #333;
+  }
+  
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+  
+.navbar a:hover {
+    background-color: rgb(35, 196, 182);
+
+    
+}
+
+
+
+/* .row {  
+    display: flex;
+    flex-wrap: wrap;
+  } */
+
+/* -------------
+About section
+---------------*/
+.about {
+    padding: 50px;
+    text-align: left;
+    background: white;
+    color: black;
+    /* height: 250px; */
+}
+
+/* .left {
+    float: left;
+    width: 20%;
+    padding: 30px;
+
+
+}
+
+.right {
+    float: left;
+    width: 80%;
+    padding: 30px;
+
+
+} */
+
+.main-img {
+    width: 150px;
+    height: 170;
+    border-radius: 30%;
+}
+
+/* -------------
+Technologies section
+---------------*/
+
+.technologies {
+    padding: 30px;
+    text-align: center;
+    background: rgb(35, 196, 182);
+    color: black;
+  } 
+
+  
+
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+/* @media screen and (max-width: 700px) {
+    .about.left, .about.main {
+      width: 100%; 
+    }
+} */
+
+
+.image-tech {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+} 
+
+
+/*
+
+.image-tech.dogtinder:hover {
+    background-image: url(images/dogtinder.gif);
+} */
+
+.image-tech.python {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+/* -------------
+Projects section
+---------------*/
+
+.projects {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    color: black;
+}    
+.wrap {
+    padding: 10px;
+    display: inline-block;
+}  
+
+.image-tech.project {
+    width: 250px;
+    height: 250px;
+    border-radius: 0%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* #dogtinder {
+    border: 2px solid gray;
+}
+#dogtinder:hover {
+    background-image: url('images/GitHub.png');
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+} */
+
+
+/* .no-round-img {
+    border-radius: 0%;
+    border: 0px;
+} */
+
+.image-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+.image-button:hover {
+    border: 3px solid rgb(35, 196, 182);
+}  
+/* .table {
+    display: block;
+}   */
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+      width: 100%;
+    }
+  }
+
+
+
