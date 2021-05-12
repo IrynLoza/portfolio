@@ -19,6 +19,10 @@ body {
 
 h1,h2,h3,h4,h5 {
     text-align: center;
+    text-shadow: 0.5px 0.5px gray;
+    text-decoration-style: solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
 
 }
 
@@ -40,6 +44,7 @@ Navigation bar
   
 .navbar a:hover {
     background-color: rgb(35, 196, 182);
+    border: 1px solid white;
 
     
 }
@@ -55,13 +60,19 @@ Navigation bar
 About section
 ---------------*/
 .about {
-    padding: 50px;
+    padding: 10px;
     text-align: left;
     background: white;
     color: black;
     /* height: 250px; */
 }
 
+blockquote {
+    text-align: left;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
 /* .left {
     float: left;
     width: 20%;
@@ -81,7 +92,8 @@ About section
 .main-img {
     width: 150px;
     height: 170;
-    border-radius: 30%;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* -------------
@@ -89,10 +101,10 @@ Technologies section
 ---------------*/
 
 .technologies {
-    padding: 30px;
+    padding: 10px;
     text-align: center;
     background: rgb(35, 196, 182);
-    color: black;
+    color: white;
   } 
 
   
@@ -139,7 +151,7 @@ Projects section
 ---------------*/
 
 .projects {
-    padding: 30px;
+    padding: 10px;
     text-align: center;
     background: white;
     color: black;
@@ -150,17 +162,22 @@ Projects section
 }  
 
 .image-tech.project {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 220px;
     border-radius: 0%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* #dogtinder {
-    border: 2px solid gray;
+.project-name {
+    text-shadow: 0.5px 0.5px gray;
+    text-decoration-style: solid;
 }
-#dogtinder:hover {
-    background-image: url('images/GitHub.png');
+/* .dogtinder {
+    border: 2px solid gray;
+    background-image: url('/images/dogtinder.png');
+}
+.dogtinder:hover {
+    background-image: url('/images/dogstack.jpg');
     width: 200px;
     height: 200px;
     border-radius: 30%;
@@ -187,9 +204,116 @@ Projects section
 }   */
 
 
+/* 
+---------------------HEADER
+.container-fluid{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #FFF;
+  }
+  ============= Animation background =========
+  .background {
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    padding:0;
+    margin:0px;
+  }
+  .cube {
+    position: absolute;
+    top: 30vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #D7D4E4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+  }
+  .cube:nth-child(2n) {
+    border-color: #FFF ;
+  }
+  .cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 20vh;
+  }
+  .cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 10vh;
+  }
+  .cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+  .cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 25vh;
+  }
+  .cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 15vh;
+  }
+
+  Animate Background
+@keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  } */
+
+/* -------------
+Resume section
+---------------*/
+.resume {
+    padding: 10px;
+    text-align: center;
+    background: rgb(35, 196, 182);
+    color: white;
+  } 
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
-
+/* -------------
+Footer section
+---------------*/
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: white;
+    color: black;
+}
+  
 @media screen and (max-width: 700px) {
     .row, .navbar {   
       width: 100%;
