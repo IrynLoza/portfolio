@@ -1,6 +1,6 @@
-/* -------------
-Main style
----------------*/
+/* ---------------------------------------
+            Main style
+-----------------------------------------*/
 * {
     box-sizing: border-box;
   }
@@ -11,9 +11,9 @@ body {
 }
 
 .header {
-  padding: 100px;
+  padding: 60px;
   text-align: center;
-  background: rgb(35, 196, 182);
+  background: rgb(22, 115, 202);
   color: white;
 }  
 
@@ -26,9 +26,56 @@ h1,h2,h3,h4,h5 {
 
 }
 
-/* -------------
-Navigation bar
----------------*/
+/* ---------------------------------------
+            Header animation
+-----------------------------------------*/
+.greeting {
+    font-size: 3rem;
+    padding: 0.1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+.container {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container p {
+    font-size: 3rem;
+    padding: 0.1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container p span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+/* ---------------------------------------
+            Navigation bar
+-----------------------------------------*/
 .navbar {
     display: flex;
     background-color: #333;
@@ -43,112 +90,62 @@ Navigation bar
 }
   
 .navbar a:hover {
-    background-color: rgb(35, 196, 182);
-    border: 1px solid white;
-
-    
+    background-color: rgb(22, 115, 202);
+    border: 1px solid white;  
 }
 
-
-
-/* .row {  
-    display: flex;
-    flex-wrap: wrap;
-  } */
-
-/* -------------
-About section
----------------*/
+/* ---------------------------------------
+            About section
+-----------------------------------------*/
 .about {
     padding: 10px;
     text-align: left;
     background: white;
     color: black;
-    /* height: 250px; */
 }
 
 blockquote {
     text-align: left;
     font-size: large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/* .left {
-    float: left;
-    width: 20%;
-    padding: 30px;
-
-
-}
-
-.right {
-    float: left;
-    width: 80%;
-    padding: 30px;
-
-
-} */
 
 .main-img {
-    width: 150px;
-    height: 170;
+    width: 170px;
+    margin: 5%;
+    height: 190;
+    background: url("images/card-back.jpg") no-repeat;
+    display: inline-block;
     border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* -------------
-Technologies section
----------------*/
+/* ---------------------------------------
+            Technologies section
+-----------------------------------------*/
 
 .technologies {
     padding: 10px;
     text-align: center;
-    background: rgb(35, 196, 182);
+    background: rgb(22, 115, 202);
     color: white;
   } 
-
-  
-
-/* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  } */
-/* @media screen and (max-width: 700px) {
-    .about.left, .about.main {
-      width: 100%; 
-    }
-} */
-
 
 .image-tech {
     display: inline-block;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid white;
 } 
 
-
-/*
-
-.image-tech.dogtinder:hover {
-    background-image: url(images/dogtinder.gif);
-} */
-
 .image-tech.python {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
     background-color: white;
-    border-radius: 50%;
-    border: 1px solid black;
 }
 
-
-/* -------------
-Projects section
----------------*/
+/* ---------------------------------------
+            Projects section
+-----------------------------------------*/
 
 .projects {
     padding: 10px;
@@ -162,9 +159,10 @@ Projects section
 }  
 
 .image-tech.project {
-    width: 260px;
+    width: 310px;
     height: 220px;
     border-radius: 0%;
+    border: 1px solid rgb(22, 115, 202);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -172,22 +170,7 @@ Projects section
     text-shadow: 0.5px 0.5px gray;
     text-decoration-style: solid;
 }
-/* .dogtinder {
-    border: 2px solid gray;
-    background-image: url('/images/dogtinder.png');
-}
-.dogtinder:hover {
-    background-image: url('/images/dogstack.jpg');
-    width: 200px;
-    height: 200px;
-    border-radius: 30%;
-} */
 
-
-/* .no-round-img {
-    border-radius: 0%;
-    border: 0px;
-} */
 
 .image-button {
     width: 50px;
@@ -197,104 +180,15 @@ Projects section
   }
 
 .image-button:hover {
-    border: 3px solid rgb(35, 196, 182);
+    border: 3px solid rgb(22, 115, 202);
 }  
-/* .table {
-    display: block;
-}   */
 
-
-/* 
----------------------HEADER
-.container-fluid{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background: #FFF;
-  }
-  ============= Animation background =========
-  .background {
-    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
-    background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
-    position: relative;
-    height: 70vh;
-    width: 100%;
-    overflow: hidden;
-    padding:0;
-    margin:0px;
-  }
-  .cube {
-    position: absolute;
-    top: 30vh;
-    left: 45vw;
-    width: 10px;
-    height: 10px;
-    border: solid 1px #D7D4E4;
-    transform-origin: top left;
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    animation: cube 12s ease-in forwards infinite;
-  }
-  .cube:nth-child(2n) {
-    border-color: #FFF ;
-  }
-  .cube:nth-child(2) {
-    animation-delay: 2s;
-    left: 25vw;
-    top: 20vh;
-  }
-  .cube:nth-child(3) {
-    animation-delay: 4s;
-    left: 75vw;
-    top: 10vh;
-  }
-  .cube:nth-child(4) {
-    animation-delay: 6s;
-    left: 90vw;
-    top: 10vh;
-  }
-  .cube:nth-child(5) {
-    animation-delay: 8s;
-    left: 10vw;
-    top: 25vh;
-  }
-  .cube:nth-child(6) {
-    animation-delay: 10s;
-    left: 50vw;
-    top: 15vh;
-  }
-
-  Animate Background
-@keyframes Gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  @keyframes cube {
-    from {
-      transform: scale(0) rotate(0deg) translate(-50%, -50%);
-      opacity: 1;
-    }
-    to {
-      transform: scale(20) rotate(960deg) translate(-50%, -50%);
-      opacity: 0;
-    }
-  } */
-
-/* -------------
-Resume section
----------------*/
+/* ---------------------------------------
+            Resume section
+-----------------------------------------*/
 .resume {
     padding: 10px;
-    text-align: center;
-    background: rgb(35, 196, 182);
+    background: rgb(22, 115, 202);
     color: white;
   } 
 
@@ -303,16 +197,66 @@ Resume section
     margin-right: auto;
 }
 
+ul {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    list-style-type: none;
+    counter-reset: steps;
+    font-family: sans-serif;
+  }
+  ul li {
+    padding: 0 0 20px 50px;
+    position: relative;
+    margin: 0;
+  }
+  ul li:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '+';
 
-/* -------------
-Footer section
----------------*/
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    line-height: 24px;
+    background: white;
+  }
+  
+  ul li:before {
+    position: absolute;
+    left: 13px;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    border-left: 2px dashed white;
+  }
+  ul li:last-of-type:before {
+    border: none;
+  }
+
+ul li span {
+    color: rgb(238, 241, 245);
+    text-shadow: 1px 1px gray;
+    text-decoration-style: solid;
+
+
+}  
+ 
+/* ---------------------------------------
+            Footer section
+-----------------------------------------*/
 .footer {
     padding: 10px;
     text-align: center;
     background: white;
     color: black;
-}
+} 
   
 @media screen and (max-width: 700px) {
     .row, .navbar {   
